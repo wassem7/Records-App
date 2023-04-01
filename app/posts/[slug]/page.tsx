@@ -25,10 +25,15 @@ const PostPage = (props: propsInterface) => {
   const posts = getMarkdownContent(props.params.slug);
   return (
     <div className=''>
-      <h1 className='text-orange-700 text-xl underline underline-offset-2 mb-3'>
+      <h1 className='text-cyan-700 font-mono font-bold text-3xl mb-1 text-center'>
         {posts.data.title}
       </h1>
-      <Markdown>{posts.content}</Markdown>
+      <p className=' text-slate-400 font-mono text-md mb-5 text-center'>
+        {posts.data.date}
+      </p>
+      <article className='prose lg:prose-xl font-mono'>
+        <Markdown>{posts.content}</Markdown>
+      </article>
     </div>
   );
 };

@@ -4,14 +4,21 @@ import Link from 'next/link';
 
 const PostPreview = (props: postsMetaData) => {
   return (
-    <div key={props.slug}>
+    <div
+      key={props.slug}
+      className='border border-slate-300 rounded-md p-4 bg-white '
+    >
+      <p className=' text-slate-400 font-mono text-sm mb-2'>
+        {props.date}
+      </p>
       <Link href={`/posts/${props.slug}`}>
-        <h2 className='hover:text-red-800  text-red-600 text-2xl underline underline-offset-2 mb-1'>
+        <h2 className='hover:underline hover:underline-offset-2  text-cyan-600 font-mono font font-semibold text-2xl mb-1'>
           {props.title}
         </h2>
       </Link>
-      <p>{props.subtitle}</p>
-      <p className='mb-5'>{props.date}</p>
+      <p className='text-slate-600 font-mono text-sm'>
+        {props.subtitle}
+      </p>
     </div>
   );
 };

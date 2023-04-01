@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link';
 import './globals.css';
+import Header from './Header';
+import Footer from './Footer';
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,29 +14,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const header = (
-    <header>
-      <Link href='/'>
-        <h1 className='text-3xl'>Wassem's Blog</h1>
-      </Link>
-
-      <p>Welcome to my tech blog</p>
-      <br />
-    </header>
-  );
-
-  const footer = (
-    <footer>
-      <br />
-      <p>Developed by Wassem</p>
-    </footer>
-  );
   return (
     <html lang='en'>
       <body>
-        {header}
-        {children}
-        {footer}
+        <div className='mx-auto max-w-2xl px-4'>
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

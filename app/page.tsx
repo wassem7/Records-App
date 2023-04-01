@@ -1,6 +1,5 @@
 import React from 'react';
 import getMarkdownPosts from '@/Components/getPostsMetadata';
-import Link from 'next/link';
 import PostPreview from '@/Components/PostPreview';
 
 const HomePage = () => {
@@ -9,7 +8,11 @@ const HomePage = () => {
     <PostPreview key={post.slug} {...post} />
   ));
 
-  return <div>{markdowns}</div>;
+  return (
+    <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
+      {markdowns}
+    </div>
+  );
 };
 
 export default HomePage;
