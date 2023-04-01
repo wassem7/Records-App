@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Link from 'next/link';
 import './globals.css';
 
 export const metadata = {
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <h1 className='text-3xl'>Wassem's Blog</h1>
+      <Link href='/'>
+        <h1 className='text-3xl'>Wassem's Blog</h1>
+      </Link>
+
       <p>Welcome to my tech blog</p>
       <br />
     </header>
