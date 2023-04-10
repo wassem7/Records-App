@@ -2,7 +2,7 @@
 export default function Head() {
   return (
     <>
-      <title>Wassem's Blog</title>
+      <title>Regalia Records</title>
     </>
   );
 }
