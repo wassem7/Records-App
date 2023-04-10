@@ -9,7 +9,7 @@ const HomePage = () => {
         <h1 className='text-white  text-center text-xl md:text-xl font-montserrat -mb-2 md:mb-0 '>
           Regalia Church
         </h1>
-        <h1 className='text-center text-4xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-400  font-montserrat font-bold  md:mb-0'>
+        <h1 className='text-center text-3xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-400  font-montserrat font-bold  md:mb-0'>
           Records House
         </h1>
       </div>
