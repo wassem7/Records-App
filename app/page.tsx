@@ -14,6 +14,14 @@ const HomePage = () => {
         </h1>
       </div>
       <Searchbar />
+      <div className='text-slate-400 justify-center font-montserrat mt-2 flex flex-row'>
+        <p>Cannot find your info ? </p>
+        <span className='ml-2'>
+          <p className='text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-400  hover:underline hover:cursor-pointer underline-offset-2 decoration-yellow-300 '>
+            Get Started here
+          </p>
+        </span>
+      </div>
     </div>
   );
 };
