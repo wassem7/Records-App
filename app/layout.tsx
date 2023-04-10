@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={montserrat.variable}>
-      <body className='bg-slate-800 min-h-screen max-w-md md:max-w-2xl mx-auto flex flex-col'>
+      <body className='bg-slate-800 min-h-screen max-w-xs md:max-w-2xl mx-auto flex flex-col'>
         <div className='flex flex-col flex-1  justify-center '>
           {children}
         </div>
